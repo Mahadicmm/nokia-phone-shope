@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>phone-shop</title>
+</head>
+<body>
+    <section class="container mx-auto w-10/12 border border-green-600 rounded bg-red-400 mt-4">
+        <div class="nokia-1110i flex items-center justify-evenly my-3">
+            <div class="img w-32"><img class="rounded-2xl" src="./img/nokia-1110i-00.jpg" alt=""></div>
+            <div class="btn flex items-center">
+                <button id="nokia-1110_minus"><i class="text-2xl fa fa-minus" aria-hidden="true"></i></button>
+                <input id="nokia-1110_input" value="0" class=" text-lg border rounded mx-4 outline-none text-center w-10" type="number" readonly>
+                <button id="nokia-1110_plus"><i class="text-2xl fa fa-plus" aria-hidden="true"></i></button>
+                <div  class=" price ml-6 text-white text-xl"><i class=" mx-4 far fa-equals"></i> $<span id="nokia-1110_price">00</span></div>
+            </div>
+        </div>
+        <div class="nokia-3210 flex items-center justify-evenly mr-8">
+            <div class="img w-52"><img class="rounded-full" src="./img/nokia-3210-hero.jpg" alt=""></div>
+            <div class="btn flex items-center">
+                <button id="nokia-3210_minus"><i class="text-2xl fa fa-minus" aria-hidden="true"></i></button>
+                <input id="nokia-3210_input" value="0" class=" text-lg border rounded mx-4 outline-none text-center w-10" type="number" readonly>
+                <button id="nokia-3210_plus"><i class="text-2xl fa fa-plus" aria-hidden="true"></i></button>
+                <div class= "ml-6 text-white text-xl"><i class="mx-4 far fa-equals"></i> $<span id="nokia-3210_price">00</span></div>
+            </div>
+        </div>
+        <br><br><br>
+        <hr>
+        <section class="price text-white text-xl">
+            <div class="flex items-center justify-evenly sub_total-price mr-5">
+                <div>sub-total</div>
+                <div class="sub-total_price">$<span id="sub-total">00</span></div>
+            </div>
+            <div class="flex items-center justify-evenly vat">
+                <div class="vat">Vat</div>
+                <div class="vat-price">$<span id="vat">00</span></div>
+            </div>
+            <hr>
+            <div class="flex items-center justify-evenly total-price mr-2">
+                <div class="total">Total</div>
+                <div class="price">$<span id="grand-total">00</span></div>
+            </div>
+        </section>
+    </section>
+
+
+
+
+    <script src="./phone.js"></script>
+</body>
+</html>
